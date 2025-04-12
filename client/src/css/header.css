@@ -1,0 +1,15 @@
+.header{
+    width: 100%;
+    height: 1.5pc;
+    box-sizing: border-box;
+    font-size: 1pc;
+    padding: 0 5px;
+    display: flex;
+    color: white;
+    align-items: center;
+    background-color: rgb(1, 1, 174) !important;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header .icon{
+    color: rgb(144, 244, 144);
+}

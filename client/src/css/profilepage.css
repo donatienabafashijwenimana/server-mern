@@ -1,0 +1,27 @@
+.container-profile{
+    margin: 2pc auto;
+}
+#profile-pic{
+    border-radius: 50%;
+    padding: 2px;
+    border: 1px solid black;
+    height:4pc;
+    width: 4pc;
+    margin: 0 auto;
+}
+.pic-section{
+    margin: 0 auto;
+    width: 4pc;
+    height: 4pc;
+}
+.upload_image_input{
+    visibility: hidden;
+}
+.camera-icon{
+    position: absolute;
+    margin:-1.5pc 3.2pc;
+    cursor: pointer;
+    color: blue;
+
+
+}

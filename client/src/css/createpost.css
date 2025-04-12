@@ -1,0 +1,52 @@
+.createpost-container{
+    width: 100%;
+    box-shadow:0 0 10px rgb(207, 207, 222);
+    height: 6pc;
+    text-transform: capitalize;
+    background-color: rgb(185, 227, 185);
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 4px;
+    border-radius: 10px;
+}
+.create-post-input{
+    width: 100%;
+    border-radius: 5px;
+    align-self: center;
+    outline: none;
+    padding: 5px;
+    min-height: 3PC;
+    min-width: 100%;
+    max-height: 3pc;
+    max-width: 100%;
+}
+.createpost-container label{
+    width: 45%;
+    height: 1.5pc;
+    gap: 1pc;
+}
+.uploadpost{
+    background-color: blue;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 5px;
+    height: 1.5pc;
+    border: none;
+    width: 100%;
+    color: white;
+    border-radius: 1pc;
+    
+}
+.upload-post-input{
+    visibility: hidden;
+}
+.send-post{
+    background-color: green;
+    color: white;
+    border: none;
+    height: 1.5pc;
+    padding: 5px;
+    border-radius: 1pc;
+}

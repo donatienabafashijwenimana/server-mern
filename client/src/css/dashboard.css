@@ -1,0 +1,306 @@
+.dashboard{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.dashboard-left-side{
+    width: 18%;
+    /* background-color: rgba(222, 222, 223, 0.856); */
+    height: 31.4pc;
+    margin: 0.3pc;
+    box-shadow: 0 0 1px rgb(242, 242, 244);
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.dashboard-button-container{
+    background-color: white;
+    box-shadow: 0 0 3PX rgb(226, 226, 235);
+    height: 2pc;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 1pc;
+    font-weight: 700;
+    padding: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.dashboard-button-container:hover{
+    background-color: rgb(246, 245, 245);
+}
+.dashboard-profile{
+    width: 100%;
+    box-shadow:0 0 10px rgb(207, 207, 222);
+    max-height: 5pc;
+    text-transform: capitalize;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    gap: 4px;
+}
+.dashboard-profile-pic{
+    width:20%;
+    align-self: center;
+    justify-self: center;
+    background-color: white;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.profile-card {
+    padding: 10px;
+
+    height: 9pc;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    margin-top: 10px;
+    background-color: #becec0;
+  }
+  
+  .profile-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .profile-name {
+    font-size: 13px;
+    margin: 0;
+    color: #333;
+    /* margin-bottom: 10px; */
+  }
+  
+  .profile-stats {
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .profile-actions button {
+    padding: 3px 12px;
+    margin: 4px;
+    border: none;
+    border-radius: 20px;
+    font-size: 10px;
+    cursor: pointer;
+  }
+  
+  .view-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .msg-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+.dashboard-center-content{
+    margin-top: 0.3pc;
+    width: 50%;
+    max-width: 60%;
+    max-height: 32pc;
+    height: 31.3pc;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(156, 156, 173, 0.169) rgb(223, 223, 229);
+    box-shadow: 0 0 10px rgb(226, 224, 232);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    /* box-shadow: 0 0 4px blue; */
+    align-self: center;
+    justify-self: center;
+    gap: 10px;
+}
+.top-image{
+    display: flex;
+    width: 90%;
+    height: 10pc;
+    align-self: center;
+    justify-content: space-around;
+}
+.top-image img{
+    width: 8pc;
+    height: 10pc;
+    border-radius: 7px;
+}
+.dashboard-post-container{
+    width: 90%;
+    background-color: rgb(231, 239, 245);
+    height: auto;
+    padding: 5px;
+    align-self: center;
+    border-radius: 15px;
+}
+.dashboard-post-sender-container{
+    background-color: rgb(250, 246, 246);
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0px;
+    /* border-bottom: 1px solid black; */
+    padding: 3px;
+    display: flex;
+    gap: 5px;
+}
+.dashboard-post-sender-pic{
+   width:2pc;
+   height: 2pc;
+   border-radius: 50%;
+   background-color: rgb(219, 215, 215);
+   padding: 3px;
+}
+.dashboard-post-sender-names{
+    color: black;
+    align-self: center;
+    font-size: 20px;
+}
+.dashboard-post-content-container{
+   background-color: white;
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   align-self: center;
+   justify-self: center;
+   padding: 7px;
+   gap: 5px;
+
+}
+.dashboard-post-content-text{
+    color: black;
+    padding: 3px;
+    color: black;
+}
+.dashboard-post-content-pic-container{
+    background-color: rgb(0, 0, 0);
+    z-index: 10;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.dashboard-post-content-pic{
+    width: auto;
+    max-width: 100%;
+    min-width: 70%;
+    justify-self: center;
+    align-self: center;
+    height: auto;
+    max-height: 20pc;
+    min-height: 13pc;
+    /* padding: 3px; */
+    border-radius: 3px;
+    background-color: rgb(244, 236, 241);
+}
+.dashboard-post-feedback-container{
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 5px;
+    border-radius: 0 0 10px 10px;
+}
+.post-feedback{
+    display: flex;
+    width: 43px;
+    background-color: rgb(194, 193, 193);
+    border-radius: 3px 10px 10px 3px;
+    padding: 1px 3px;
+    font-size: 15px;
+    justify-content: center;
+    gap: 3px;
+    align-items: center;
+}
+.post-icon-feedback{
+    font-size: 1.2pc;
+    cursor: pointer;
+    color: blue;
+}
+.post-icon-feedback:hover{
+    color: rgb(65, 64, 64);
+}
+.dashboard-right-side{
+    width:25%;
+    box-shadow: 0 0 10px rgb(224, 224, 232);
+    height: 31pc;
+    align-self: center;
+    flex-direction: column;
+    display: flex;
+}
+.dashboard-right-container1,.dashboard-right-container2{
+    padding: 15px 5px;
+    width: 100%;
+    height: 50%;
+    box-shadow: 0 0 3px rgb(224, 224, 232);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    
+    scrollbar-color: rgba(156, 156, 173, 0.543) rgb(223, 223, 229);
+    box-shadow: 0 0 10px rgb(226, 224, 232);
+    padding-bottom: 10px;
+}
+.dashboard-right-title{
+    font-size: 1.5pc;
+}
+.friend-container{
+    display: flex;
+    width: 95%;
+    justify-self: center;
+    box-shadow: 0 0 10px rgb(224, 217, 217);
+    height: auto;
+    padding: 4px;
+    margin-top: 8px;
+    gap: 0;
+}
+.friend-detail{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: -3pc;
+}
+.friend-names{
+    font-size: 1pc;
+    text-transform: capitalize;
+}
+.friend-status{
+    color: gray;
+    font-size: 10px;
+    margin: 0;
+}
+.friend-pic {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .friend-button {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 3px;
+  }
+  .friend-button:hover {
+    background-color: #135bcc;
+  }

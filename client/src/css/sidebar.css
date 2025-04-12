@@ -1,0 +1,128 @@
+.sidebar-contatiner {
+    width: 25%;
+    max-height: 100vh;
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-right: 2px solid #e0e0e0;
+}
+
+.sidebar-contatiner h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.sidebar-contatiner input {
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.sidebar-contatiner input:focus {
+    border-color: blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.2);
+}
+
+.all-user-sidebar-container {
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    background-color: #e9f5f5;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.single-user-sidebar-container {
+    background-color: white;
+    margin: 5px auto;
+    width: 95%;
+    box-sizing: border-box;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.single-user-sidebar-container:hover {
+    background-color: #f1f1f1;
+    border: 1px solid #d1d1d1;
+}
+
+.selecteduser{
+    background-color: #d1cccc;
+    border: 1px solid #d1d1d1;
+}
+.single-user-sidebar-container img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.user-sidebar-detail {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.user-sidebar-detail span {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.user-sidebar-detail small.user-sidebar-message-send {
+    font-size: 13px;
+    color: rgb(5, 5, 35);
+    gap: 4px;
+    display: flex;
+}
+.user-sidebar-detail small.user-sidebar-message-receive {
+    font-size: 13px;
+    color: blue;
+    gap: 4px;
+    display: flex;
+}
+
+.user-online-status {
+    width: 12px;
+    height: 12px;
+    background-color: #28a745;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: -15px;
+    margin-top: 5px;
+    border: 2px solid white;
+}
+
+.unread-status{
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+    max-width: 1.5pc;
+    max-height: 1.5pc;
+    font-size: 10px;
+    text-align: center;
+    padding: 2px;
+    margin-left: 19.1%;
+    margin-top: -1.5pc;
+    position: absolute;
+}
