@@ -23,7 +23,7 @@ function Sidebar() {
             statusmessagetoeachuser(user._id)
             
         });
-     },[users])
+     },[users,getlastmessage,statusmessagetoeachuser])
     return (
         <div className='sidebar-contatiner'>
             <h3>Contacts</h3>
@@ -42,7 +42,7 @@ function Sidebar() {
                     .sort((a, b) => {
                         const lastMsgA = lastmessages[a._id]?.createdAt || 0;
                         const lastMsgB = lastmessages[b._id]?.createdAt || 0;
-                        return new Date(lastMsgB) - new Date(lastMsgA); // Ubutumwa bushya buze hejuru
+                        return new Date(lastMsgB) - new Date(lastMsgA);
                     })
                     .map((Users, index) => (
                         

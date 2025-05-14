@@ -18,7 +18,8 @@ const Messagecontent = () => {
 
     const messageEndRef = useRef(null);
     const messageContainerRef = useRef(null);
-
+     
+    console.log(messages)
     const handlesendmessage = async (e) => {
         e.preventDefault();
         if ((messagetext && messagetext.length > 0) || image) {

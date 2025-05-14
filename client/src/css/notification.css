@@ -1,0 +1,57 @@
+.notification-container{
+    position: absolute;
+    width: 30%;
+    height: 31pc;
+    background-color: white;
+    box-shadow: 0 0 20px rgb(9, 6, 6);
+    right: 0;
+    padding: 5px;
+}
+.notification-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.notification-close-icon{
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    background-color: red;
+    border-radius: 50%;
+    font-weight: bold;
+    padding: 3px;
+    margin-right: 0.5pc;
+}
+.notification-title{
+    font-size: 1.5pc;
+    color: black;
+    text-transform: capitalize;
+}
+.notification-content-container{
+    width: 100%;
+    padding: 3px;
+    min-height: 10pc;
+    height: auto;
+    overflow-y: auto;
+    margin-top: 0.5pc;
+}
+.notification-card{
+    width: 100%;
+    height: 3pc;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    box-shadow: 0 0 3px rgb(149, 149, 150);
+    display: flex;
+    padding: 5px;
+}
+.notification-pic{
+    width: 2pc;
+    height: 2pc;
+    border-radius: 50%;
+    padding: 0.2pc;
+}
+.notification-text{
+    align-content: center;
+}

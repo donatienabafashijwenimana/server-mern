@@ -4,23 +4,27 @@ import Navbar from '../components/navbar'
 import Chart from '../components/chartpage'
 import Header from '../components/header'
 import Dashboard from '../components/dashboard'
+import Friendship from '../pages/friendspage'
 import { switchpagestore } from '../store/switchpagestore'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Notificationpage from './notificationpage'
 
 
 function home() {
   require( '../css/home.css')
-  const { pages,ispagechanging } = switchpagestore()
+  const { pages,ispagechanging,displaynotification } = switchpagestore()
   const { authuser }= userauthstore()
      if(authuser) { 
         return (
           <div className='body'>
           <Header/>
           <Navbar/>
+          {displaynotification && <Notificationpage/>}
           {ispagechanging ? <div><FontAwesomeIcon/></div>:
             <>
               {pages==='chart' && <Chart/> }
               {pages==='home' && <Dashboard/>}
+              {pages==='friend' && <Friendship/>}
             </>
           }
           

@@ -6,12 +6,14 @@ import { faBell, faHome ,faBars, faEnvelope, faUserFriends} from '@fortawesome/f
 import { useNavigate } from 'react-router-dom';
 import { switchpagestore } from '../store/switchpagestore';
 import { userchartstore } from '../store/userchartstore';
+import useFriendStore from '../store/friendshipstore';
 
 function Navbar() {
     require('../css/navbar.css');
 
-    const {setpage} = switchpagestore()
+    const {setpage,setdisplaynotification} = switchpagestore()
     const {statusmessagenumber,fetchstatusmessage} = userchartstore()
+    const {friendsuggestionnumber}=useFriendStore()
     const navigate = useNavigate()
     const { authuser } = userauthstore();
 
@@ -19,14 +21,14 @@ function Navbar() {
     const iconNumbers = {
         home: 3,
         message: statusmessagenumber,
-        bell: 2,
+        bell: friendsuggestionnumber,
     };
-
+    console.log(iconNumbers.bell)
     useEffect(()=>{
         fetchstatusmessage();
         const interval = setInterval(fetchstatusmessage, 1000); // refresh every 30s
         return () => clearInterval(interval); // cleanup
-        },[]);
+        },[fetchstatusmessage]);
     return (
         <div className="nav-container">
             <div className="nav-left">
@@ -50,15 +52,15 @@ function Navbar() {
                 </div>
                 <div className="icon-container">
                     <FontAwesomeIcon className="icon" icon={faUserFriends} 
-                    onClick={(e)=>{setpage('chart')}}/>
-                    <span className="icon-number">{iconNumbers.message}</span>
+                    onClick={(e)=>{setpage('friend')}}/>
+                    {iconNumbers.bell > 0 && <span className="icon-number">{iconNumbers.bell}</span>}
                 </div>
                 <div className="icon-container">
-                    <FontAwesomeIcon className="icon" icon={faBell} />
-                    <span className="icon-number">{iconNumbers.home}</span>
+                    <FontAwesomeIcon className="icon" icon={faBell} onClick={(e)=>setdisplaynotification(true)}/>
+                    <span className="icon-number">{iconNumbers.bell}</span>
                 </div>
                 <div className="icon-container">
-                    <FontAwesomeIcon className="icon" icon={faBars} />
+                    <FontAwesomeIcon className="icon" icon={faBars}/>
                 </div>
             </div>
         </div>

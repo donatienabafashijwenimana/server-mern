@@ -1,9 +1,9 @@
 .createpost-container{
     width: 100%;
-    box-shadow:0 0 10px rgb(207, 207, 222);
+    box-shadow:0 0 10px #018701;
     height: 6pc;
     text-transform: capitalize;
-    background-color: rgb(185, 227, 185);
+    /* background-color: rgb(152, 232, 152); */
     padding: 4px;
     display: flex;
     flex-direction: column;
@@ -22,19 +22,15 @@
     max-height: 3pc;
     max-width: 100%;
 }
-.createpost-container label{
-    width: 45%;
-    height: 1.5pc;
-    gap: 1pc;
-}
 .uploadpost{
     background-color: blue;
-    font-size: 12px;
+    font-size: 10px;
     cursor: pointer;
-    padding: 5px;
-    height: 1.5pc;
+    padding: 4px 5px;
+    text-align: center;
+    height: 1.2pc;
     border: none;
-    width: 100%;
+    width: 35%;
     color: white;
     border-radius: 1pc;
     
@@ -46,7 +42,20 @@
     background-color: green;
     color: white;
     border: none;
-    height: 1.5pc;
-    padding: 5px;
+    height: 1.2pc;
+    font-size: 10px;
+    cursor: pointer;
+    padding: 0px 10px;
     border-radius: 1pc;
+}
+.file-posted{
+    max-width:4pc;
+    min-height: 3pc;
+    max-height: 3pc;
+    position: absolute;
+    margin-top: -3pc;
+    background-color: black;
+    box-shadow: 0 0 30px rgb(207, 207, 222);
+    padding: 0.5px;
+    border-radius: 5px;
 }

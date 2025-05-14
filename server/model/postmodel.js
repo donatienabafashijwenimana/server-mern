@@ -3,17 +3,21 @@ import mongoose from 'mongoose';
 const postSchema = new mongoose.Schema({
     content: {
         type: String,
-        required: true,
         trim: true,
     },
     postfile: {
         type: String,
-        required: true,
+    },
+    fileposttype:{
+        type:String
     },
     author: {
-        type: String,
+        type: mongoose.Schema.Types.ObjectId,
         required: true,
-    }
+        ref: 'Users',
+    },
+    likedby:[{type:mongoose.Schema.Types.ObjectId,ref:'Users'}],
+    dislikedby:[{type:mongoose.Schema.Types.ObjectId,ref:'Users'}],
 },{
     timestamps: true
 }
